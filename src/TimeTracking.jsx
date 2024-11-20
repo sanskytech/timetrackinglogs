@@ -237,7 +237,7 @@ const tableHeaders = {
             }, {});
           
             // Convert the summary object to a displayable array
-            content = Object.entries(issueSummary).map(([issueId, data]) => (
+            content = Object.entries(issueSummary).reverse().map(([issueId, data]) => (
               <tr key={issueId}>
                 <td>
                   <a

@@ -106,6 +106,7 @@ td {
 }
 
 
+
 .tab-container{
   width: 100%;
   flex: 0.7;
@@ -179,4 +180,19 @@ td {
   color: #666; /* Muted text color */
   cursor: not-allowed; /* Changes cursor to not-allowed */
   box-shadow: none; /* Removes shadow */
+}
+
+
+@media (max-width: 768px) { /* Target devices with width up to 768px (iPad and smaller) */
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Center items horizontally in the column layout */
+  }
+
+  .date-range {
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
 }
